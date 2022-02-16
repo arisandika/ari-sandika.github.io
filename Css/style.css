@@ -228,7 +228,7 @@ nav ul li a:hover {
 }
 
 .isi h1 span {
-  color: rgb(173, 25, 25);
+  color: rgb(255, 255, 255);
 }
 
 .isi h2 {
@@ -268,7 +268,7 @@ nav ul li a:hover {
 
 .social a {
   font-size: 30px;
-  color: rgb(245, 7, 7);
+  color: darkgray;
   margin-right: 20px;
 }
 
