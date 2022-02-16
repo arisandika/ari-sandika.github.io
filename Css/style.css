@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lexend Exa", sans-serif;
+  overflow-x: hidden;
+  background-image: linear-gradient(rgb(100, 10, 10), rgb(0, 0, 0));
+}
+
+/* Navbar */
+
+nav {
+  display: flex;
+  background: transparent;
+  justify-content: space-around;
+  color: darkgrey;
+  height: 90px;
+  align-items: center;
+  margin-left: auto;
+}
+
+nav .nama {
+  font-family: "Lexend Exa", sans-serif;
+  letter-spacing: 3px;
+  margin-left: 5%;
+  /* right: 3%; */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 67%;
+  justify-content: center;
+  gap: 15px;
+  margin-left: 35%;
+}
+
+nav ul li a {
+  color: darkgray;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 20px;
+  /* margin: 20px; */
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+.btn {
+  text-decoration: none;
+  background: darkgray;
+  border-radius: 4px;
+  padding: 10px 20px;
+  color: rgb(102, 29, 29);
+  display: inline-block;
+  border: 1px solid transparent;
+  transition: all 0, 4s ease;
+  font-family: "Lexend Exa", sans-serif;
+}
+
+.btn:hover {
+  background: transparent;
+  color: darkgray;
+  border: 1px solid darkgray;
+}
+.btn2 {
+  text-decoration: none;
+  padding: 10px 10px;
+  display: inline-block;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+  margin-right: 15px;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -5px;
+  top: 0px;
+  opacity: 0%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background-color: darkgray;
+  border-radius: 3px;
+  transition: all 0.7s;
+}
+
+/* Hamburger Menu Animation */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  transform: scale(0);
+}
+
+/* Responsive Breakpoint */
+
+/* Ukuran Tablet */
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 20%;
+  }
+
+  .nama {
+    position: relative;
+    margin-right: 120px;
+    font-size: 15px;
+  }
+}
+
+/* Ukuran Mobile */
+@media screen and (max-width: 576px) {
+  nav ul {
+    position: absolute;
+    right: 0%;
+    flex-direction: column;
+    width: 100%;
+    top: 0;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.904);
+    z-index: 1;
+    transform: translateX(100%);
+    transition: all 2s;
+  }
+
+  .isi .h1 {
+    font-size: 1.2em;
+  }
+
+  .nama {
+    position: relative;
+    left: -37px;
+    font-size: 15px;
+  }
+
+  .isi {
+    top: 240px;
+    position: relative;
+    margin-left: 0%;
+  }
+
+  .foto {
+    width: 36%;
+    float: none;
+    align-items: center;
+    position: relative;
+    left: -153px;
+    top: -15%;
+    margin: -10% 0%;
+  }
+
+  .menu-toggle {
+    display: flex;
+    left: 30px;
+  }
+
+  nav ul.slide {
+    transform: translateX(0);
+  }
+
+  .isi .h2 {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .isi .p1 {
+    font-size: 12px;
+  }
+
+  .btn {
+    font-size: 0.8em;
+    line-height: 13px;
+    /* margin: 10px 10px; */
+  }
+
+  .social a {
+    font-size: 0.2em;
+    margin-top: 9px;
+    /* padding: 20px 0px; */
+    /* size-adjust: 5px; */
+  }
+}
+
+/* Responsive Breakpoint End */
+
+/* Isi Content */
+.isi {
+  margin-left: 5%;
+  margin-top: 9%;
+  color: darkgray;
+}
+
+.isi h1 {
+  font-size: 38px;
+  margin-bottom: 8px;
+}
+
+.isi h1 span {
+  color: rgb(173, 25, 25);
+}
+
+.isi h2 {
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+
+.isi p {
+  font-size: 15px;
+  line-height: 25px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.foto {
+  max-width: 280px;
+  cursor: pointer;
+  border-radius: 50%;
+  float: right;
+  flex-wrap: wrap;
+  position: relative;
+  right: 218px;
+  top: 82px;
+}
+
+/* Isi Content End */
+
+#jumbotron {
+  height: 660px;
+}
+
+/* Social Icon */
+.social {
+  margin-left: 0 %;
+  margin-top: 19px;
+}
+
+.social a {
+  font-size: 30px;
+  color: darkgray;
+  margin-right: 20px;
+}
+
+.social a:hover {
+  color: whitesmoke;
+}
