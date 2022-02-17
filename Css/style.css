@@ -215,7 +215,7 @@ nav ul li a:hover {
   }
 }
 
-@media screen and (max-width: 392px) {
+@media screen and (max-width: 292px) {
   nav ul {
     position: absolute;
     right: 0%;
