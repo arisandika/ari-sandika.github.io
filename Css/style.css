@@ -145,13 +145,18 @@ nav ul li a:hover {
 
 /* Ukuran Mobile */
 @media screen and (max-width: 576px) {
+  body {
+    height: 200vh;
+    overflow-x: hidden;
+  }
+
   nav ul {
     position: absolute;
     right: 0%;
     flex-direction: column;
     width: 100%;
     top: 0;
-    height: 120vh;
+    height: 200vh;
     align-items: center;
     justify-content: space-evenly;
     background-color: rgba(0, 0, 0, 0.904);
@@ -160,8 +165,14 @@ nav ul li a:hover {
     transition: all 2s;
   }
 
+  nav {
+    height: 60px;
+    overflow-x: hidden;
+  }
+
   .isi .h1 {
-    font-size: 1.2em;
+    font-size: 22px;
+    margin-top: 56%;
   }
 
   .nama {
@@ -171,19 +182,21 @@ nav ul li a:hover {
   }
 
   .isi {
-    top: 240px;
+    top: 150px;
     position: relative;
+    /* margin-top: 20%; */
     margin-left: 0%;
+    text-align: center;
   }
 
   .foto {
-    width: 36%;
+    width: 50%;
     float: none;
     align-items: center;
     position: relative;
-    left: -153px;
-    top: -15%;
-    margin: -10% 0%;
+    left: -100px;
+    top: -0%;
+    margin: -0% -0%;
   }
 
   .menu-toggle {
@@ -196,12 +209,12 @@ nav ul li a:hover {
   }
 
   .isi .h2 {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 25px;
   }
 
   .isi .p1 {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .btn {
@@ -210,11 +223,17 @@ nav ul li a:hover {
     /* margin: 10px 10px; */
   }
 
-  .social a {
-    font-size: 0.2em;
-    margin-top: 9px;
+  .isi .social a {
+    font-size: 1.5em;
+    /* margin-top: 9px; */
+    margin-left: 0%;
     /* padding: 20px 0px; */
     /* size-adjust: 5px; */
+  }
+
+  .isi .social {
+    text-align: center;
+    margin-right: -5%;
   }
 }
 
@@ -231,7 +250,7 @@ nav ul li a:hover {
     width: 100%;
     top: -5%;
     bottom: 0%;
-    height: 185vh;
+    height: 175vh;
     align-items: center;
     justify-content: space-evenly;
     background-color: rgba(0, 0, 0, 0.904);
@@ -242,6 +261,94 @@ nav ul li a:hover {
 
   nav {
     height: 60px;
+    overflow-x: hidden;
+  }
+
+  .isi .h1 {
+    font-size: 18px;
+    margin-top: 25%;
+  }
+
+  .nama {
+    position: relative;
+    left: -14px;
+    font-size: 12px;
+  }
+
+  .isi {
+    top: 180px;
+    position: relative;
+    margin-left: 0%;
+  }
+
+  .foto {
+    width: 56%;
+    float: none;
+    align-items: center;
+    position: relative;
+    left: -104px;
+    top: -25%;
+    margin: -20% -11%;
+  }
+
+  .menu-toggle {
+    display: flex;
+    left: 12px;
+    bottom: 1px;
+  }
+
+  nav ul.slide {
+    transform: translateX(0);
+  }
+
+  .isi .h2 {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .isi .p1 {
+    font-size: 11px;
+  }
+
+  .btn {
+    font-size: 0.5em;
+    line-height: 13px;
+    padding: 6px 12px;
+  }
+
+  .social a {
+    font-size: 0.2em;
+    margin-top: 9px;
+    /* padding: 20px 0px; */
+    /* size-adjust: 5px; */
+  }
+}
+
+@media screen and (max-width: 393px) {
+  body {
+    height: 180vh;
+    overflow-x: hidden;
+  }
+
+  nav ul {
+    position: absolute;
+    right: 0%;
+    flex-direction: column;
+    width: 100%;
+    top: -5%;
+    bottom: 0%;
+    height: 175vh;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.904);
+    z-index: 1;
+    transform: translateX(100%);
+    transition: all 1s;
+  }
+
+  nav {
+    height: 60px;
+    overflow-x: hidden;
   }
 
   .isi .h1 {
