@@ -220,7 +220,8 @@ nav ul li a:hover {
 
 @media screen and (max-width: 320px) {
   body {
-    height: 200vh;
+    height: 180vh;
+    overflow-x: hidden;
   }
 
   nav ul {
@@ -228,9 +229,9 @@ nav ul li a:hover {
     right: 0%;
     flex-direction: column;
     width: 100%;
-    top: 0%;
+    top: -5%;
     bottom: 0%;
-    height: 200.8vh;
+    height: 185vh;
     align-items: center;
     justify-content: space-evenly;
     background-color: rgba(0, 0, 0, 0.904);
