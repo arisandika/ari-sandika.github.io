@@ -150,7 +150,8 @@ nav ul li a:hover {
 /* Ukuran Mobile */
 @media screen and (max-width: 576px) {
   body {
-    height: 170vh;
+    height: 200vh;
+    width: 100%;
     overflow-x: hidden;
     margin: 0%;
     padding: 0%;
@@ -162,14 +163,15 @@ nav ul li a:hover {
     right: 0%;
     flex-direction: column;
     width: 100%;
-    top: 0;
-    height: 170vh;
+    top: -7%;
+    height: 207vh;
     align-items: center;
     justify-content: space-evenly;
     background-color: rgba(0, 0, 0, 0.904);
     z-index: 1;
     transform: translateX(100%);
     transition: all 2s;
+    overflow-y: hidden;
   }
 
   nav {
@@ -246,7 +248,8 @@ nav ul li a:hover {
 
 @media screen and (max-width: 320px) {
   body {
-    height: 170vh;
+    height: 200vh;
+    width: 100%;
     overflow-x: hidden;
     margin: 0%;
     padding: 0%;
@@ -336,7 +339,8 @@ nav ul li a:hover {
 
 @media screen and (max-width: 393px) {
   body {
-    height: 170vh;
+    height: 200vh;
+    width: 100%;
     overflow-x: hidden;
     margin: 0%;
     padding: 0%;
@@ -469,7 +473,7 @@ nav ul li a:hover {
 /* Isi Content End */
 
 #jumbotron {
-  height: 100%;
+  height: 444px;
   /* overflow-x: hidden; */
 }
 
