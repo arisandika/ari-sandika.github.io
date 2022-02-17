@@ -2,10 +2,12 @@
   margin: 0;
   padding: 0;
   padding-bottom: 0;
+  box-sizing: border-box;
   /* overflow-x: hidden;
   overflow-y: hidden; */
 }
 
+html,
 body {
   font-family: "Lexend Exa", sans-serif;
   overflow-x: hidden;
@@ -134,11 +136,13 @@ nav ul li a:hover {
 /* Ukuran Tablet */
 @media screen and (max-width: 768px) {
   body {
-    height: 160vh;
+    height: 110vh;
     width: 100%;
     overflow-x: hidden;
     margin: 0%;
     padding: 0%;
+    overflow-x: hidden;
+    padding-bottom: 0%;
   }
 
   .nama {
@@ -155,8 +159,9 @@ nav ul li a:hover {
     /* overflow-x: hidden; */
   }
 
+  html,
   body {
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     overflow-x: hidden;
     margin: 0%;
@@ -171,13 +176,13 @@ nav ul li a:hover {
     flex-direction: column;
     width: 100%;
     top: -7%;
-    height: 107vh;
+    height: 127vh;
     align-items: center;
     justify-content: space-evenly;
     background-color: rgba(0, 0, 0, 0.904);
     z-index: 1;
     transform: translateX(100%);
-    transition: all 2s;
+    transition: all 1.5s;
     overflow-y: hidden;
     overflow-x: hidden;
   }
@@ -185,35 +190,49 @@ nav ul li a:hover {
   nav {
     height: 60px;
     overflow-x: hidden;
+    /* color: rgb(71, 8, 8); */
+    background-color: rgb(71, 8, 8);
   }
 
   .isi .h1 {
-    font-size: 22px;
-    margin-top: 56%;
+    font-size: 23px;
+    white-space: nowrap;
+    /* margin-top: 35%; */
   }
 
   .nama {
     position: relative;
-    left: -37px;
+    left: -46px;
     font-size: 15px;
   }
 
   .isi {
-    top: 150px;
+    top: 250px;
     position: relative;
     /* margin-top: 20%; */
-    margin-left: 0%;
-    text-align: center;
+    /* margin-left: 20%; */
+    text-align: left;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.13), rgba(39, 8, 8, 0.425));
+    padding: 0px 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    bottom: 50%;
+    /* padding-left: 2%;
+    padding-right: 2%; */
+    /* margin-left: -2%;
+    margin-right: -2%; */
   }
 
   .foto {
-    width: 50%;
-    float: none;
+    width: 45%;
+    /* float: none; */
+    display: block;
     align-items: center;
-    position: relative;
-    left: -100px;
+    /* position: relative; */
+    left: -120px;
     top: -0%;
-    margin: -0% -0%;
+    margin: -10% -0%;
+    /* text-align: center; */
   }
 
   .menu-toggle {
@@ -226,12 +245,17 @@ nav ul li a:hover {
   }
 
   .isi .h2 {
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 19px;
+    line-height: 29px;
+    color: rgb(155, 155, 155);
+    /* text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; */
   }
 
   .isi .p1 {
-    font-size: 10px;
+    font-size: 15px;
+    color: rgb(143, 143, 143);
   }
 
   .btn {
@@ -243,25 +267,27 @@ nav ul li a:hover {
   .isi .social a {
     font-size: 1.5em;
     /* margin-top: 9px; */
-    margin-left: 0%;
+    margin-left: 0.3%;
     /* padding: 20px 0px; */
     /* size-adjust: 5px; */
   }
 
   .isi .social {
-    text-align: center;
-    margin-right: -5%;
+    /* text-align: center; */
+    /* margin-right: -5%; */
   }
 }
 
 @media screen and (max-width: 320px) {
+  html,
   body {
-    height: 200vh;
+    height: 120vh;
     width: 100%;
     overflow-x: hidden;
     margin: 0%;
     padding: 0%;
     overflow-x: hidden;
+    padding-bottom: 0%;
   }
 
   nav ul {
@@ -269,53 +295,69 @@ nav ul li a:hover {
     right: 0%;
     flex-direction: column;
     width: 100%;
-    top: -5%;
-    bottom: 0%;
-    height: 100%;
+    top: -7%;
+    height: 127vh;
     align-items: center;
     justify-content: space-evenly;
     background-color: rgba(0, 0, 0, 0.904);
     z-index: 1;
     transform: translateX(100%);
-    transition: all 1s;
+    transition: all 1.5s;
+    overflow-y: hidden;
+    overflow-x: hidden;
   }
 
   nav {
-    height: 60px;
+    height: 50px;
     overflow-x: hidden;
+    /* color: rgb(71, 8, 8); */
+    background-color: rgb(71, 8, 8);
   }
 
   .isi .h1 {
     font-size: 18px;
-    margin-top: 25%;
+    white-space: nowrap;
+    /* margin-top: 35%; */
   }
 
   .nama {
     position: relative;
-    left: -14px;
-    font-size: 12px;
+    left: -21px;
+    font-size: 15px;
   }
 
   .isi {
-    top: 180px;
+    top: 230px;
     position: relative;
-    margin-left: 0%;
+    /* margin-top: 20%; */
+    /* margin-left: 20%; */
+    text-align: left;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.13), rgba(39, 8, 8, 0.425));
+    padding: 0px 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    bottom: 50%;
+    /* padding-left: 2%;
+    padding-right: 2%; */
+    /* margin-left: -2%;
+    margin-right: -2%; */
   }
 
   .foto {
-    width: 56%;
-    float: none;
+    width: 45%;
+    /* float: none; */
+    display: block;
     align-items: center;
-    position: relative;
-    left: -104px;
-    top: -25%;
-    margin: -20% -11%;
+    /* position: relative; */
+    left: -100px;
+    top: -0%;
+    margin: -10% -0%;
+    /* text-align: center; */
   }
 
   .menu-toggle {
     display: flex;
-    left: 12px;
-    bottom: 1px;
+    left: 17px;
   }
 
   nav ul.slide {
@@ -323,35 +365,50 @@ nav ul li a:hover {
   }
 
   .isi .h2 {
-    font-size: 14px;
-    line-height: 25px;
+    font-size: 15px;
+    line-height: 29px;
+    color: rgb(155, 155, 155);
+    /* text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; */
   }
 
   .isi .p1 {
-    font-size: 11px;
+    font-size: 12px;
+    color: rgb(143, 143, 143);
   }
 
   .btn {
     font-size: 0.5em;
     line-height: 13px;
-    padding: 6px 12px;
+    padding: 8px 10px;
+    /* margin: 10px 10px; */
   }
 
-  .social a {
-    font-size: 0.2em;
-    margin-top: 9px;
+  .isi .social a {
+    font-size: 1.5em;
+    /* margin-top: 9px; */
+    margin-left: 0.3%;
     /* padding: 20px 0px; */
     /* size-adjust: 5px; */
+  }
+
+  .isi .social {
+    /* text-align: center; */
+    /* margin-right: -5%; */
   }
 }
 
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 375px) {
+  html,
   body {
-    height: 170vh;
+    height: 120vh;
+    width: 100%;
     overflow-x: hidden;
     margin: 0%;
     padding: 0%;
     overflow-x: hidden;
+    padding-bottom: 0%;
   }
 
   nav ul {
@@ -359,53 +416,69 @@ nav ul li a:hover {
     right: 0%;
     flex-direction: column;
     width: 100%;
-    top: -5%;
-    bottom: 0%;
-    height: 100%;
+    top: -7%;
+    height: 127vh;
     align-items: center;
     justify-content: space-evenly;
     background-color: rgba(0, 0, 0, 0.904);
     z-index: 1;
     transform: translateX(100%);
-    transition: all 1s;
+    transition: all 1.5s;
+    overflow-y: hidden;
+    overflow-x: hidden;
   }
 
   nav {
-    height: 60px;
+    height: 50px;
     overflow-x: hidden;
+    /* color: rgb(71, 8, 8); */
+    background-color: rgb(71, 8, 8);
   }
 
   .isi .h1 {
     font-size: 18px;
-    margin-top: 25%;
+    white-space: nowrap;
+    /* margin-top: 35%; */
   }
 
   .nama {
     position: relative;
-    left: -14px;
-    font-size: 12px;
+    left: -21px;
+    font-size: 15px;
   }
 
   .isi {
-    top: 180px;
+    top: 230px;
     position: relative;
-    margin-left: 0%;
+    /* margin-top: 20%; */
+    /* margin-left: 20%; */
+    text-align: left;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.13), rgba(39, 8, 8, 0.425));
+    padding: 0px 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    bottom: 50%;
+    /* padding-left: 2%;
+    padding-right: 2%; */
+    /* margin-left: -2%;
+    margin-right: -2%; */
   }
 
   .foto {
-    width: 56%;
-    float: none;
+    width: 45%;
+    /* float: none; */
+    display: block;
     align-items: center;
-    position: relative;
-    left: -104px;
-    top: -25%;
-    margin: -20% -11%;
+    /* position: relative; */
+    left: -90px;
+    top: -0%;
+    margin: -10% -0%;
+    /* text-align: center; */
   }
 
   .menu-toggle {
     display: flex;
-    left: 12px;
-    bottom: 1px;
+    left: 17px;
   }
 
   nav ul.slide {
@@ -413,25 +486,37 @@ nav ul li a:hover {
   }
 
   .isi .h2 {
-    font-size: 14px;
-    line-height: 25px;
+    font-size: 15px;
+    line-height: 29px;
+    color: rgb(155, 155, 155);
+    /* text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; */
   }
 
   .isi .p1 {
-    font-size: 11px;
+    font-size: 12px;
+    color: rgb(143, 143, 143);
   }
 
   .btn {
-    font-size: 0.5em;
+    font-size: 0.6em;
     line-height: 13px;
-    padding: 6px 12px;
+    padding: 8px 10px;
+    /* margin: 10px 10px; */
   }
 
-  .social a {
-    font-size: 0.2em;
-    margin-top: 9px;
+  .isi .social a {
+    font-size: 1.5em;
+    /* margin-top: 9px; */
+    margin-left: 0.3%;
     /* padding: 20px 0px; */
     /* size-adjust: 5px; */
+  }
+
+  .isi .social {
+    /* text-align: center; */
+    /* margin-right: -5%; */
   }
 }
 
@@ -498,4 +583,8 @@ nav ul li a:hover {
 
 .social a:hover {
   color: whitesmoke;
+}
+
+#footer {
+  clear: both;
 }
