@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  padding-bottom: 0;
   /* overflow-x: hidden;
   overflow-y: hidden; */
 }
@@ -131,7 +132,7 @@ nav ul li a:hover {
 /* Responsive Breakpoint */
 
 /* Ukuran Tablet */
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   body {
     height: 160vh;
     width: 100%;
@@ -145,7 +146,7 @@ nav ul li a:hover {
     margin-right: 120px;
     font-size: 15px;
   }
-} */
+}
 
 /* Ukuran Mobile */
 @media screen and (max-width: 576px) {
@@ -161,6 +162,7 @@ nav ul li a:hover {
     margin: 0%;
     padding: 0%;
     overflow-x: hidden;
+    padding-bottom: 0%;
   }
 
   nav ul {
@@ -177,6 +179,7 @@ nav ul li a:hover {
     transform: translateX(100%);
     transition: all 2s;
     overflow-y: hidden;
+    overflow-x: hidden;
   }
 
   nav {
